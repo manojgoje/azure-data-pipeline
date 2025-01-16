@@ -1,0 +1,23 @@
+{
+	"name": "datasource_orderCsv",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "linkedService_to_orderCSV",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "file_uploads/349536/attachments/c28/5fb/25b/orders.csv"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

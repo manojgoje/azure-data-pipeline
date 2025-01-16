@@ -1,0 +1,9 @@
+{
+	"name": "datafactory-manojgoje",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "dcd8adec-837e-404b-801d-cd906b3b130f",
+		"tenantId": "5f251fce-e212-4fb0-bec3-cf1836e80874"
+	}
+}

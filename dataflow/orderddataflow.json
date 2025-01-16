@@ -11,6 +11,9 @@
 					},
 					"name": "ordersInputStream",
 					"description": "Add source dataset "
+				},
+				{
+					"name": "source1"
 				}
 			],
 			"sinks": [
@@ -41,6 +44,8 @@
 				"     allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> ordersInputStream",
+				"source(allowSchemaDrift: true,",
+				"     validateSchema: false) ~> source1",
 				"ordersInputStream select(mapColumn(",
 				"          order_id,",
 				"          custome_id = order_customer_id,",
